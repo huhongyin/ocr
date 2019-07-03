@@ -1,20 +1,20 @@
 <template>
-  <div id="app">
-    <el-header id="header">
-    <el-row id="header-row">
-        <el-col :span="4" style="margin-left:0;height:100%;">
-            <div class="grid-content" style="height:100%;margin:6px 0;">
-                <a href="/#/ocr">
-                    <img src="http://ocrmaker.com/images/logo.png" style="height:100%;max-width:100%;">
-                </a>
-            </div>
-        </el-col>
-        <el-col :span="19" style="margin-left:15px;">
-            <div class="grid-content">
-            
-            </div>
-        </el-col>
-    </el-row>
+  <div id="app" style="border-top: 2px solid #005e7c;">
+    <el-header id="header" style="padding:0px;hegiht:88px;">
+        <el-row id="header-row">
+            <el-col :span="4" style="margin-left:0;height:100%;">
+                <div class="grid-content" style="height:100%;margin:12px 0;">
+                    <a href="/#/ocr">
+                        <img src="http://ocrmaker.com/images/logo.png" style="height:60px;max-width:100%;">
+                    </a>
+                </div>
+            </el-col>
+            <el-col :span="19" style="margin-left:15px;">
+                <div class="grid-content">
+                
+                </div>
+            </el-col>
+        </el-row>
     </el-header>
     <router-view/>
   </div>
@@ -41,10 +41,10 @@ export default {
   /*margin-top: 60px;*/
 }
 #header{
-  border-top: 2px solid #005e7c;
+  /*border-top: 2px solid #005e7c;*/
 }
 #header-row{
-    max-width: 979px;
+    max-width: 705px;
     min-width: 768px;
     position: relative;
     margin: 0 auto;

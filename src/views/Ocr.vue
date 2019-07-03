@@ -58,10 +58,10 @@
           <el-input></el-input>
         </el-form-item>
         <el-form-item label="选择识别语音">
-          <el-select style="width:60%;">
-            <el-option label="中文（简体）" value="chs" selected></el-option>
-            <el-option label="中文（繁体）" value="cht"></el-option>
-            <el-option label="英语" value="eng"></el-option>
+          <el-select style="width:60%;" value="chs" placeholder="请选择">
+            <el-option label="中文（简体）" value="chs" key="chs"></el-option>
+            <el-option label="中文（繁体）" value="cht" key="cht"></el-option>
+            <el-option label="英语" value="eng" key="eng"></el-option>
           </el-select>
           <el-button type="primary" @click="onSubmit" class="blue-button" style="width:18%;">开始</el-button>
           <el-button @click="reset" class="blue-button" style="width:18%;float:right;">重置</el-button>
@@ -99,6 +99,30 @@
           <el-input type="textarea" style="width:90%;widheightth:85%;padding:6px 12px;margin:1em 0px;"></el-input>
         </div>
       </div>
+    </el-col>
+  </el-row>
+
+  <el-row style="width:940px;position:relative;margin:0 auto;">
+    <el-col :span="24">
+      <h3 style="margin-bottom:60px;border-bottom: 1px solid #c4c4c4;max-width:100%;text-align:left;">
+        <span style="display: inline-block;padding: 0 50px 5px 0;border-bottom: 6px solid #005e7c;margin-bottom: -1px;font-weight: bold;">如何使用？－ OCRMker</span>
+      </h3>
+    </el-col>
+  </el-row>
+
+  <el-row style="width:940px;position:relative;margin:0 auto;">
+    <el-col :span="24" style="font-size:1.1em;text-align:left;">
+      <a title="ocrmaker文字识别" style="color:#08ab89;text-decoration:none;" href="http://ocrmaker.com">OCRMker Online</a> 通过使用光学字符识别（Optical Character Recognition - OCR）技术将文本文档的扫描或（智能手机）图像转换为可编辑文件。它使用最先进的现代OCR软件。识别质量与商业OCR SDK软件（例如Abbyy）相当。
+      <br><br>
+
+      我们的在线OCR服务可以免费使用,只需上传您的图像文件。 OCR软件采用JPG，PNG或PDF（测试中），唯一的限制是图像/ PDF不能大于5MB。
+      <br><br>        
+      
+      您上传的数据是绝对安全的：本站不存储任何数据。
+      <br><br>
+      支持识别的语言: 中文、英语、法语、德语、阿拉伯语、希腊语、日语、韩语、葡萄牙语、俄语、西班牙语 （如有其它需求请联系我们）。<br><br>
+
+      为获得最佳OCR结果，请务必为文档选择正确的OCR语言。最好不要直接识别手写文档，本服务像任何当前可用的OCR软件一样，只能处理打印的文档。为了获得最佳结果，只包含数字的图像（Number OCR）使用韩语作为OCR语言。
     </el-col>
   </el-row>
 </el-container>
