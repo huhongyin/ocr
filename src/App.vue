@@ -1,6 +1,6 @@
 <template>
   <div id="app" style="border-top: 2px solid #005e7c;">
-    <el-header id="header" style="padding:0px;hegiht:88px;">
+    <el-header id="header" style="padding:0px;height:88px;">
         <el-row id="header-row">
             <el-col :span="4" style="margin-left:0;height:100%;">
                 <div class="grid-content" style="height:100%;margin:12px 0;">
