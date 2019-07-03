@@ -2,18 +2,18 @@
   <div id="app">
     <el-header id="header">
     <el-row id="header-row">
-        <el-col :span="4" style="margin-left:0;" style="height:100%;">
-            <div class="grid-content" style="height:100%;">
+        <el-col :span="4" style="margin-left:0;height:100%;">
+            <div class="grid-content" style="height:100%;margin:6px 0;">
                 <a href="/#/ocr">
                     <img src="http://ocrmaker.com/images/logo.png" style="height:100%;max-width:100%;">
                 </a>
             </div>
         </el-col>
-        <!-- <el-col :span="20" style="margin-left:15px;">
+        <el-col :span="19" style="margin-left:15px;">
             <div class="grid-content">
-            right div
+            
             </div>
-        </el-col> -->
+        </el-col>
     </el-row>
     </el-header>
     <router-view/>
