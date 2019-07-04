@@ -9,13 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-    	path: '/ocr',
-    	name: 'Ocr',
-    	component: Ocr
+      name: 'Ocr',
+      component: Ocr
     }
   ]
 })

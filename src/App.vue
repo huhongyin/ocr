@@ -3,9 +3,9 @@
     <el-header id="header" style="padding:0px;height:88px;">
         <el-row id="header-row">
             <el-col :span="4" style="margin-left:0;height:100%;">
-                <div class="grid-content" style="height:100%;margin:12px 0;">
-                    <a href="/#/ocr">
-                        <img src="http://ocrmaker.com/images/logo.png" style="height:60px;max-width:100%;">
+                <div class="grid-content" style="height:100%;margin:0;">
+                    <a href="/#/">
+                        <img src="~@src/logo.png" style="height:100px;max-width:100%;">
                     </a>
                 </div>
             </el-col>
@@ -26,7 +26,6 @@ export default {
   data(){
   },
   created(){
-    console.log(this.logoUrl)
   }
 }
 </script>
